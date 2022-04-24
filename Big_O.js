@@ -30,6 +30,18 @@ function LogIter(n) {
 // O(n) Linear
 
 // O(n log n) Linearithmic
+function nLogNFunc(n) {
+    let y = n;
+    while (n > 1) {
+        n = Math.floor(n / 2); // O(log n)
+        for (let i in y) {
+            console.log(i) // O(n)
+        }
+    }
+}
+// for n = 4
+//O(log n) -> O(log 2^4) -> Log 2^4 = 2
+//O(n log n) -> O(n * log n) -> O( 4 * 2)
 
 // O(n^2) Quadratic
 function square(n) {
@@ -38,21 +50,23 @@ function square(n) {
             console.log(i, j) // log cell within square matrix 
         }
     }
-    // Area of sq H*W which is same # of operations required. So that's why O(n^2)
+}
+// Area of sq H*W which is same # of operations required. So that's why O(n^2)
 
-    // ################################# 
+// ################################# 
 
-    // O(n^3) Cubic
-    function square(n) {
-        for (let i in n) {
-            for (let j in n) {
-                for (let k in n) {
-                    console.log(i, j) // log cell within cube matrix
-                }
+// O(n^3) Cubic
+function square(n) {
+    for (let i in n) {
+        for (let j in n) {
+            for (let k in n) {
+                console.log(i, j) // log cell within cube matrix
             }
         }
-        // Area of sq H*W*L which is same # of operations required. So that's why O(n^3)
+    }
+}
+// Area of sq H*W*L which is same # of operations required. So that's why O(n^3)
 
-        // O(2^n) Exponential
+// O(2^n) Exponential
 
-        // O(n!) Factorial
+// O(n!) Factorial
