@@ -20,7 +20,7 @@ function LogFunc(n) {
 }
 //Iterative Log n
 function LogIter(n) {
-    while (n > 1) {  
+    while (n > 1) {
         n = Math.floor(n / 2) // Will be x iterations before loops ends so -> Log n
     }
 }
