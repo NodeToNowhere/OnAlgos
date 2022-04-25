@@ -25,8 +25,6 @@ function LogIter(n) {
     }
 }
 
-
-
 // O(n) Linear
 
 // O(n log n) Linearithmic
@@ -68,5 +66,14 @@ function square(n) {
 // Area of sq H*W*L which is same # of operations required. So that's why O(n^3)
 
 // O(2^n) Exponential
+function fib(n){
+    if (n === 0){
+        return 0;
+    }
+    if (n === 1){
+        return 1;
+    }
+    return fib (n - 1) + fib(n - 2)
+}
 
 // O(n!) Factorial
